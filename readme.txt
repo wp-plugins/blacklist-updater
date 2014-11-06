@@ -16,7 +16,7 @@ Automatic updating of the comment blacklist in WordPress with antispam keys from
 
 == Description ==
 
-Few users are familiar with the comment blacklist built into WordPress. Located in the WordPress admin area under “Settings”—“Discussion”, that blacklist for incoming comments accepts values (words) to indetify spam by.
+Few users are familiar with the comment blacklist built into WordPress. Located in the WordPress admin area under “Settings”—“Discussion”, that blacklist for incoming comments accepts values (words) to identify spam by.
 
 Additionally to plugins like [Antispam Bee](https://wordpress.org/plugins/antispam-bee/) in order to fight spam successfully a curated comment blacklist is recommendable. You can either update the list manually, or utilize a very detailed global [comment blacklist](https://github.com/splorp/wordpress-comment-blacklist) that gets updated on a regular basis.
 
