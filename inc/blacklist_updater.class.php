@@ -96,7 +96,7 @@ class Blacklist_Updater
 
         /* Output debug infos */
         if ( defined('WP_DEBUG_LOG') && WP_DEBUG_LOG ) {
-            error_log('Get blacklist from GitHub');
+            error_log('Comment Blacklist requested from GitHub');
         }
 
         /* Start request */
@@ -107,17 +107,25 @@ class Blacklist_Updater
 
         /* Exit on error */
         if ( is_wp_error($response) ) {
-            return false;
+            if ( defined('WP_DEBUG_LOG') && WP_DEBUG_LOG ) {
+                error_log('Comment Blacklist response error: ' .$response->get_error_message());
+            }
+
+            return;
         }
 
         /* Check response code */
         if ( wp_remote_retrieve_response_code($response) !== 200 ) {
+            if ( defined('WP_DEBUG_LOG') && WP_DEBUG_LOG ) {
+                error_log('Comment Blacklist is up to date');
+            }
+
             return;
         }
 
         /* Output debug infos */
         if ( defined('WP_DEBUG_LOG') && WP_DEBUG_LOG ) {
-            error_log('Blacklist successfully downloaded');
+            error_log('Comment Blacklist successfully downloaded');
         }
 
         /* Update blacklist */
@@ -128,7 +136,7 @@ class Blacklist_Updater
 
         /* Output debug infos */
         if ( defined('WP_DEBUG_LOG') && WP_DEBUG_LOG ) {
-            error_log('Blacklist successfully updated');
+            error_log('Comment Blacklist successfully updated');
         }
 
         /* Get & validate Etag */
