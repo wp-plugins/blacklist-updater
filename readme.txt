@@ -3,7 +3,7 @@ Contributors: sergej.mueller
 Tags: spam, antispam, comments, discussion, blacklist
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZAQUT9RLPW8QN
 Requires at least: 3.8
-Tested up to: 4.1.1
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,14 +25,20 @@ Blacklist Updater has been developed to keep your comment blacklist in your Word
 The plugin will check the global comment blacklist on GitHub multiple times a day. Whenever new anti-spam values have been added to the global list, Blacklist Updater will read the global list and update your WordPress database accordingly. While the check-up process will run several times a day, the plugin will only update the database when it detects an actual change of the global comment blacklist on GitHub.
 
 
+= Requirements =
+* PHP 5.2.4
+* WordPress 3.8
+
+
 = Memory usage =
 * Back-end: ~ 0,04 MB
 * Front-end: ~ 0,02 MB
 
 
-= Available languages =
+= Languages =
+* German
 * English
-* Deutsch
+* Русский
 
 
 = Authors =
@@ -48,6 +54,10 @@ The plugin will check the global comment blacklist on GitHub multiple times a da
 
 == Changelog ==
 
+= 0.0.3 / 21.04.2015 =
+* WordPress 4.2 support
+* Russian translation
+
 = 0.0.2 =
 * Plugin refactoring
 * Moving to wordpress.org
@@ -58,11 +68,6 @@ The plugin will check the global comment blacklist on GitHub multiple times a da
 
 == Installation ==
 
-= Requirements =
-* WordPress 3.8 or greater
-* PHP 5.2.4 or greater
-
-= Installation =
 * WordPress Dashboard > Plugins > Add New
 * Search for *Blacklist Updater* > Install
 * No settings required

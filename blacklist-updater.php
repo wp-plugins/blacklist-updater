@@ -8,7 +8,7 @@ Author: Sergej M&uuml;ller
 Author URI: http://wpcoder.de
 Plugin URI: https://wordpress.org/plugins/blacklist-updater/
 License: GPLv2 or later
-Version: 0.0.2
+Version: 0.0.3
 */
 
 /*
